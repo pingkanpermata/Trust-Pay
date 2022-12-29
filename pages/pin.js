@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BackgroundFormLogin from "../components/backgroundFormLogin";
+import FormLogin from "../components/FormLogin";
 import jwt_decode from "jwt-decode";
 import { useSelector } from "react-redux";
 import http from "../helpers/http";
@@ -96,7 +96,7 @@ const Pin = () => {
 
   return (
     <div className="flex h-screen">
-      <BackgroundFormLogin />
+      <FormLogin />
 
       <div className="flex flex-col flex-[40%] px-10 gap-5 items-center overflow-y-auto pt-16 pb-10 bg-[#f5f5f5]">
         <div className="text-2xl font-bold text-cyan-600 leading-relaxed w-[430px]">Secure Your Account, Your Wallet, and Your Data With 6 Digits PIN That You Created Yourself.</div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
-import Toolbar from "../components/toolbar";
+import Sidebar from "../components/sidebar";
 import Footer from "../components/footer";
 import { useSelector } from "react-redux";
 import http from "../helpers/http";
@@ -24,9 +24,9 @@ const History = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-screen gap-5">
-        <Toolbar dashboard={true} />
+        <Sidebar dashboard={true} />
         <div className="flex-[80%] rounded-xl">
-          <div className="card w-full bg-base-100 shadow-xl">
+          <div className="card w-full shadow-xl">
             <div className="card-body flex flex-col gap-6">
               <div className="flex">
                 <div className="grow font-bold text-lg">Transaction History</div>

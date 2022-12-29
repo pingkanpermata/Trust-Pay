@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import { FiLock, FiEye, FiEyeOff } from "react-icons/fi";
 import http from "../../helpers/http";
@@ -43,7 +43,7 @@ const ChangePassword = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar profile={true} />
+        <Sidebar profile={true} />
         <div className="flex-[80%] flex flex-col items-center gap-3 pt-5 p-8 bg-white rounded-xl shadow overflow-y-auto">
           <div className="w-full mb-14">
             <div className="font-bold text-lg mb-5 text-stone-800">Change Password</div>

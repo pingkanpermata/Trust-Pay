@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
@@ -108,7 +108,7 @@ const Confirmation = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar transactions={true} />
+        <Sidebar transactions={true} />
 
         <div className="flex-[80%] bg-white p-5 h-full overflow-y-auto rounded-xl shadow-md">
           <div className="flex flex-col gap-3">

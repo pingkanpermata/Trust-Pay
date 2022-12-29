@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { FiLock, FiEye, FiEyeOff } from "react-icons/fi";
-import BackgroundFormLogin from "../components/backgroundFormLogin";
+import FormLogin from "../components/FormLogin";
 
 const ResetPassword = () => {
   const [contentPassword, setContentPassword] = useState(0);
@@ -10,7 +10,7 @@ const ResetPassword = () => {
 
   return (
     <div className="flex h-screen">
-      <BackgroundFormLogin />
+      <FormLogin />
 
       <div className="flex flex-col flex-[40%] px-10 pt-10 lg:pt-16 gap-5  bg-[#f5f5f5]">
       <div className="lg:hidden text-3xl font-bold text-[#10A19D]">e-Pay</div>

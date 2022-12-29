@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BackgroundFormLogin() {
+export default function FormLogin() {
   return (
     <div
       className="hidden lg:flex flex-[60%] flex-col bg-[url('/MaskGroup.svg')] bg-cover px-20 py-10 text-white 

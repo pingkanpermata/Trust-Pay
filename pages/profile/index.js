@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import { HiOutlinePencil } from "react-icons/hi";
 import http from "../../helpers/http";
@@ -45,7 +45,7 @@ const Profile = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar profile={true} />
+        <Sidebar profile={true} />
         <div className="flex-[80%] flex flex-col items-center gap-3 py-14 p-5 bg-white rounded-xl shadow overflow-y-auto">
           {successMessage ? (
             <div className="alert alert-success shadow-lg">
@@ -85,7 +85,7 @@ const Profile = () => {
               </Link>
             </div>
             <div>
-              <Link href="/profile/changePassword" className="flex w-full bg-[#E5E5E5] px-5 py-4 rounded-xl items-center">
+              <Link href="/profile/changePass" className="flex w-full bg-[#E5E5E5] px-5 py-4 rounded-xl items-center">
                 <button className="flex justify-start grow w-full text-lg">Change Password</button>
                 <div>
                   <img className="w-[30px]" src="/arrow-right.svg" />
@@ -101,9 +101,9 @@ const Profile = () => {
               </Link>
             </div>
             <div>
-              <button onClick={logout} className="flex w-full bg-[#E5E5E5] px-5 py-4 rounded-xl items-center">
+              <Link href="/" className="flex w-full bg-[#E5E5E5] px-5 py-4 rounded-xl items-center">
                 <div className="flex justify-start grow w-full text-lg">Logout</div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiLock, FiEye, FiEyeOff } from "react-icons/fi";
-import BackgroundFormLogin from "../components/backgroundFormLogin";
+import FormLogin from "../components/FormLogin";
 import {useDispatch} from 'react-redux'
 import { useRouter } from "next/router";
 import { loginAction } from "../redux/actions/auth";
@@ -36,7 +36,7 @@ const Login = () => {
 
   return (
     <div className="flex h-screen">
-      <BackgroundFormLogin />
+      <FormLogin />
 
       <div className="flex flex-col flex-[100%] lg:flex-[40%] px-10 justify-center gap-5  bg-[#f5f5f5]">
         <div className="lg:hidden text-3xl font-bold text-[#10A19D]">e-Pay</div>

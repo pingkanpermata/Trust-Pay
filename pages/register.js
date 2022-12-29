@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BackgroundFormLogin from "../components/backgroundFormLogin";
+import FormLogin from "../components/FormLogin";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiLock, FiEye, FiEyeOff } from "react-icons/fi";
@@ -43,7 +43,7 @@ const Register = () => {
   }
   return (
     <div className="flex h-screen">
-      <BackgroundFormLogin />
+      <FormLogin />
 
       <div className="flex flex-col flex-[40%] px-10 gap-5 overflow-y-auto pt-10 lg:pt-16 pb-10  bg-[#f5f5f5]">
         <div className="lg:hidden text-3xl font-bold text-[#2C74B3]">Trust-Pay</div>

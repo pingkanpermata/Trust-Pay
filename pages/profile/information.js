@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import Link from "next/link";
 import { useSelector } from "react-redux";
@@ -14,7 +14,7 @@ const Information = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar profile={true} />
+        <Sidebar profile={true} />
         <div className="flex-[80%] flex flex-col items-center gap-3 pt-5 p-8 bg-white rounded-xl shadow overflow-y-auto">
           <div className="w-full mb-5">
             <div className="font-bold text-lg mb-5 text-stone-800">Personal Information</div>
@@ -47,7 +47,7 @@ const Information = () => {
                   <div>Phone Number</div>
                   <div className="text-xl font-bold text-stone-800">{user.phoneNumber || '-'}</div>
                 </div>
-                <Link href="/profile/updatePhoneNumber" className="text-[#10A19D]">Manage</Link>
+                <Link href="/profile/upPhoneNum" className="text-[#10A19D]">Manage</Link>
               </div>
             </div>
           </div>

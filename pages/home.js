@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar.js";
 import Link from "next/link.js";
 import Footer from "../components/footer.js";
-import Toolbar from "../components/toolbar.js";
+import Sidebar from "../components/sidebar.js";
 import { useSelector } from "react-redux";
 import http from "../helpers/http.js";
 import WithAuth from "../components/hoc/withauth.js";
@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-screen gap-5">
-        <Toolbar dashboard={true} />
+        <Sidebar dashboard={true} />
 
         <div className="flex-[80%] flex-col gap-2 mb-5 h-full">
           <div className="w-full flex bg-[#2C74B3] p-5 text-white rounded-xl mb-5">

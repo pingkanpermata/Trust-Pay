@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import { useSelector } from "react-redux";
 import http from "../../helpers/http";
@@ -132,7 +132,7 @@ const ChangePin = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar profile={true} />
+        <Sidebar profile={true} />
         {!changePin ? (
           <div className="flex-[80%] flex flex-col items-center gap-3 pt-5 p-8 bg-white rounded-xl shadow overflow-y-auto">
             <div className="w-full mb-14">

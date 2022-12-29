@@ -6,7 +6,7 @@ import { resetProfile } from "../redux/reducers/profile";
 import { useDispatch, useSelector } from "react-redux";
 import http from "../helpers/http";
 
-const Toolbar = ({ transactions, dashboard, profile }) => {
+const Sidebar = ({ transactions, dashboard, profile }) => {
   const token = useSelector((state) => state.auth.token);
   const dispatch = useDispatch();
   const router = useRouter();
@@ -66,12 +66,12 @@ const Toolbar = ({ transactions, dashboard, profile }) => {
               <div className={profile ? `font-bold` : null}>Profile</div>
             </Link>
 
-            <button onClick={logout} className="flex items-end grow gap-5 px-8">
+            <Link href="/" className="flex items-end grow gap-5 px-8">
               <div>
                 <img src="/log-out.svg" />
               </div>
               <div>Logout</div>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -109,4 +109,4 @@ const Toolbar = ({ transactions, dashboard, profile }) => {
   );
 };
 
-export default Toolbar;
+export default Sidebar;

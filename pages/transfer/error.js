@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 
 const Error = () => {
@@ -8,7 +8,7 @@ const Error = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar transactions={true} />
+        <Sidebar transactions={true} />
         <div className="flex-[80%] py-10 p-5 bg-white overflow-y-auto rounded-xl shadow-md">
           <div className="flex flex-col items-center gap-5 mb-5">
             <div>

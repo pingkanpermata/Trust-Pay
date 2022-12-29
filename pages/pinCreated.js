@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BackgroundFormLogin from "../components/backgroundFormLogin";
+import FormLogin from "../components/FormLogin";
 import WithAuth from "../components/hoc/withauth.js";
 import Link from "next/link";
 
@@ -7,7 +7,7 @@ const PinCreated = () => {
 
   return (
     <div className="flex h-screen">
-      <BackgroundFormLogin />
+      <FormLogin />
 
       <div className="flex flex-col flex-[40%] px-10 gap-5 overflow-y-auto pt-16 pb-10 bg-[#f5f5f5]">
         <img className="w-[80px]" src='/success.svg'/>

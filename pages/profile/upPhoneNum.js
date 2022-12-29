@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer";
 import { BsTelephone } from "react-icons/bs";
 import http from "../../helpers/http";
@@ -12,7 +12,7 @@ const ChangePhoneNumber = () => {
   const token = useSelector(state => state.auth.token)
   const [successMessage, setSuccessMessage] = useState("");
 
-  const updatePhoneNumber = async (e) => {
+  const upPhoneNum = async (e) => {
     e.preventDefault()
     const phoneNumber = e.target.phoneNumber.value
 
@@ -28,7 +28,7 @@ const ChangePhoneNumber = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar profile={true} />
+        <Sidebar profile={true} />
         <div className="flex-[80%] flex flex-col items-center gap-3 pt-5 p-8 bg-white rounded-xl shadow overflow-y-auto">
           <div className="w-full mb-14">
             <div className="font-bold text-lg mb-5 text-stone-800">Edit Phone Number</div>
@@ -45,7 +45,7 @@ const ChangePhoneNumber = () => {
               </div>
             </div>
           ) : null}
-          <form onSubmit={updatePhoneNumber} className="flex flex-col gap-10 w-6/12">
+          <form onSubmit={upPhoneNum} className="flex flex-col gap-10 w-6/12">
             <div className={`flex gap-3 items-center border-b-2 ${contentPhoneNumber ? "border-[#2C74B3]" : "border-[#2C74B3]"}`}>
               <BsTelephone className={`text-xl ${contentPhoneNumber ? "text-[#2C74B3]" : null}`} />
               <div className="font-bold">+62</div>

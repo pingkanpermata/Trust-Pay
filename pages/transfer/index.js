@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar";
-import Toolbar from "../../components/toolbar";
+import Sidebar from "../../components/sidebar";
 import { BiSearch } from "react-icons/bi";
 import Footer from "../../components/footer";
 import { useSelector } from "react-redux";
@@ -23,7 +23,7 @@ const Transfer = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[700px] gap-5">
-        <Toolbar transactions={true} />
+        <Sidebar transactions={true} />
         <div className="flex-[80%]">
           <div className="card w-full shadow-xl">
             <div className="card-body py-5">

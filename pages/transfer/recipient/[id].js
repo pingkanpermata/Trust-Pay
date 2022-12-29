@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../../components/navbar";
-import Toolbar from "../../../components/toolbar";
+import Sidebar from "../../../components/sidebar";
 import { HiOutlinePencil } from "react-icons/hi";
 import Footer from "../../../components/footer";
 import Router, { useRouter } from "next/router";
@@ -65,7 +65,7 @@ const Amount = () => {
     <>
       <Navbar />
       <main className="flex px-20 py-7 bg-[#f5f5f5] h-[580px] gap-5">
-        <Toolbar transactions={true} />
+        <Sidebar transactions={true} />
         <div className="flex-[80%] h-full overflow-y-auto rounded-xl shadow-md">
           <div className="card w-full">
             <div className="card-body py-5">
